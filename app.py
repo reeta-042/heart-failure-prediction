@@ -1,10 +1,10 @@
 from flask import Flask, render_template, request
-import pickle
+import joblib
 import numpy as np
 
 # Load model and scaler
-model = pickle.load(open('best_log_model.pkl', 'rb'))
-scaler = pickle.load(open('scaler.pkl', 'rb'))  
+model = joblib.load(open('best_log_model.pkl', 'rb'))
+scaler = joblib.load(open('scaler.pkl', 'rb'))  
 
 app = Flask(__name__)
 
