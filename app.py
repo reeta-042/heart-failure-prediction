@@ -4,7 +4,7 @@ import numpy as np
 
 # Load model and scaler
 model = pickle.load(open('best_log_model.pkl', 'rb'))
-scaler = pickle.load(open('scaler.pkl', 'rb'))  # Remove this if you didn't use a scaler
+scaler = pickle.load(open('scaler.pkl', 'rb'))  
 
 app = Flask(__name__)
 
@@ -34,17 +34,17 @@ def predict_risk():
                 sex, smoking, time]
     input_array = np.array(features).reshape(1, -1)
 
-    # Scale input if scaler is used
-    input_scaled = scaler.transform(input_array)  # Or just input_array if no scaler
+    # Scale input with scaler
+    input_scaled = scaler.transform(input_array)  
 
     # Make prediction
     prediction = model.predict(input_scaled)
 
     # Interpret result
     if prediction[0] == 1:
-        result = "Patient is at risk of heart failure. Begin treatment in earnest."
+        result = "Patient is AT risk of heart failure. Begin treatment in earnest."
     else:
         result = "Patient is NOT at risk of heart failure."
 
     # Send result to template
-    return render_template('heart_form.html', result=result)
+    return render_template('heart_failure.html', result=result)
