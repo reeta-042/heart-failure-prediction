@@ -10,7 +10,7 @@ app = Flask(__name__)
 
 @app.route('/')
 def index():
-    return render_template('heart_failure.html')
+    return render_template('heart2_failure.html')
 
 @app.route('/predict', methods=['POST'])
 def predict_risk():
@@ -47,4 +47,4 @@ def predict_risk():
         result = "Patient is NOT at risk of heart failure."
 
     # Send result to template
-    return render_template('heart_failure.html', result=result)
+    return render_template('heart2_failure.html', result=result)
