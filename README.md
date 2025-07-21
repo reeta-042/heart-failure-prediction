@@ -30,7 +30,7 @@ heart-failure-predictor/
 │   └── medical.jpg    
 │
 └── notebooks/
-    └── EJIABOR_RITA_DEV_TOWN_PROHJECT.ipynb   # Model training and analysis notebook
+    └── EJIABOR_RITA_DEV_TOWN_CAPSTONE_PROJECT.ipynb   # Model training and analysis notebook
 `
 
 
@@ -55,7 +55,7 @@ heart-failure-predictor/
 
 📊 Model Information
 
-The model was trained using patient clinical data such as age, ejection fraction, serum creatinine, anaemia, and blood pressure. See notebooks/Ejiabor_Rita_DEV_TOWN.ipynb for full preprocessing, feature engineering, and accuracy metrics.
+The model was trained using patient clinical data such as age, ejection fraction, serum creatinine, anaemia, and blood pressure. See notebooks/Ejiabor_Rita_DEV_TOWN_CAPSTONE_PROJECT.ipynb for full preprocessing, feature engineering, and accuracy metrics.
 
 
 🔐 Disclaimer
