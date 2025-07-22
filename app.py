@@ -8,7 +8,7 @@ scaler = joblib.load(open('scaler.pkl', 'rb'))
 
 app = Flask(__name__)
 
-@app.route('/')
+@app.route('/', methods =["POST","GET"])
 def index():
     return render_template('heart2_failure.html')
 
