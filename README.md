@@ -5,7 +5,7 @@ A Flask-based machine learning web application that predicts the risk of heart f
 
 🌐 Live Demo
 Click here to try the app  
-(https://heart-failure-prediction-0020.onrender.com/predict)
+(https://heart-failure-prediction-0020.onrender.com)
 
 
 🧠 Project Overview
